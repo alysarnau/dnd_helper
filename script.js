@@ -11,9 +11,13 @@ for (let i = 0; i < diceNumber; i++) (console.log(rollDice()));
     //diceSide is the type of Die it is - example, a d4 is 4, etc., needs
     //to choose a random number between 1 and diceSide
 
-let btn = document.querySelectorAll(".rollDice");
+let btns = document.querySelectorAll(".rollDice");
 
-btn.forEach
+btns.forEach(btn => btn.addEventListener('click', function(e) {
+    rollDice();
+    //need to set id slash value for dice
+  })
+)
 
 btn.addEventListener('click', function (e) {
     console.log(rollDice());
