@@ -1,6 +1,5 @@
-let diceNumber;
-let diceSide;
-
+let diceNumber = document.querySelector("#diceNumber");
+let diceSide = document.querySelector("#diceSide");
 
 
 function rollDice (diceNumber,diceSide) {
@@ -11,5 +10,10 @@ function rollDice (diceNumber,diceSide) {
     console.log(Math.floor(Math.random() * diceSide));
     }
 }
+
+let btn = document.querySelector('#rollDice');
+let para = document.createElement('div');
+btn.appendChild(para);
+para.textContent = "Here is a test.";
 
 //append result of each roll to results div
